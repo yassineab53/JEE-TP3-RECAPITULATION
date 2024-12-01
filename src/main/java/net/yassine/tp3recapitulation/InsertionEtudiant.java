@@ -1,6 +1,7 @@
 package net.yassine.tp3recapitulation;
 
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -21,6 +22,8 @@ public class InsertionEtudiant extends HttpServlet {
 
         GestionEtudiants.listeEtudiants.add(E);
 
+        RequestDispatcher r = request.getRequestDispatcher("AffichageEtudiants");
+        r.forward(request, response);
 
 
     }

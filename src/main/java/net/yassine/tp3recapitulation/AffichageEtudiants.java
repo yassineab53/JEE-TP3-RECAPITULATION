@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 //@WebServlet(name = "affichageetudiants", value = "/affichage-etudiants")
 @WebServlet("/AffichageEtudiants")
 public class AffichageEtudiants extends HttpServlet {
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, IOException {
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
