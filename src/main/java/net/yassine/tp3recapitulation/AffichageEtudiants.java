@@ -10,9 +10,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "affichageetudiants", value = "/affichage-etudiants")
+//@WebServlet(name = "affichageetudiants", value = "/affichage-etudiants")
+@WebServlet("/AffichageEtudiants")
 public class AffichageEtudiants extends HttpServlet {
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, IOException {
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();

@@ -8,6 +8,6 @@
 <h1><%= "Hello Yassine" %></h1>
 <br/>
 
-<a href="affichage-etudiants">Affichage des étudiants</a>
+<a href="identification.html">Identification</a>
 </body>
 </html>
