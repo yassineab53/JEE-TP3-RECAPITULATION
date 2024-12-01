@@ -17,8 +17,11 @@ public class InsertionEtudiant extends HttpServlet {
         double moy = Double.parseDouble(request.getParameter("moy"));
         String url_img = request.getParameter("utl_img");
 
+        Etudiant E = new Etudiant(cin, name, moy, url_img);
+
+        GestionEtudiants.listeEtudiants.add(E);
 
 
-        Etudiant e = new Etudiant(cin, name, moy, url_img);
+
     }
 }
