@@ -7,7 +7,8 @@
 <body>
 <h1><%= "Hello Yassine" %></h1>
 <br/>
-
-<a href="insertionEtudiant.html">Identification</a>
+<%-- Comment --%>
+<%-- <a href="AffichageEtudiants">Identification</a> --%>
+<a href="insertionEtudiant.html">Insertion etudiant</a>
 </body>
 </html>
