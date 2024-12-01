@@ -14,7 +14,11 @@ public class InsertionEtudiant extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String cin  = request.getParameter("cin");
         String name = request.getParameter("name");
-        String moy = request.getParameter("moy");
+        double moy = Double.parseDouble(request.getParameter("moy"));
         String url_img = request.getParameter("utl_img");
+
+
+
+        Etudiant e = new Etudiant(cin, name, moy, url_img);
     }
 }
