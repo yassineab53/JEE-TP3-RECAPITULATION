@@ -13,6 +13,7 @@ import java.io.IOException;
 public class Identification extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         String login = request.getParameter("login");
         String password = request.getParameter("password");
 
@@ -21,9 +22,7 @@ public class Identification extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("AffichageEtudiants");
             rd.forward(request, response);
         } else {
-            request.setAttribute("login", login);
-            request.setAttribute("password", password);
-            RequestDispatcher rd = request.getRequestDispatcher("UtilisateurNonValide");
+            RequestDispatcher rd = request.getRequestDispatcher("echec.html");
             rd.forward(request, response);
         }
     }
